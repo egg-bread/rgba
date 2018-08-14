@@ -2,12 +2,17 @@
 rgba is a collection of GUI projects made in Python revolving around colors and images :D
 
 ## rgba: Color Palette! ##
-Python libraries used:
+![rgba: Color Palette! GUI](images/rgba_color_palette_GUI.png)
+<p>_Color Palette!_ accepts JPEG/PNG images with at least 3 color channels (RGB or RGBA mode) :-)</p>
+<p>Python libraries used:
+
 - Tkinter
-- Pillow
+- Pillow (PIL)
 - requests
 - io
-WIP
+- copy
+</p>
+
 ## rgba: Background! ##
 WIP
 ## rgba: Crop! ##
