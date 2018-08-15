@@ -53,7 +53,7 @@ def open_file():
     global target_file
     global transparent
     global the_palette
-    pil_image = Image.open(filedialog.askopenfilename(title="Select an image!", filetypes=types) # opens as a PIL image
+    pil_image = Image.open(filedialog.askopenfilename(title="Select an image!", filetypes=types)) # opens as a PIL image
     get_colors(pil_image) # grab color data
     check_transparency(pil_image) # also run image_preview if image is transparent
     if transparent is False:
