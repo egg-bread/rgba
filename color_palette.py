@@ -53,7 +53,7 @@ def open_file():
     global the_palette
     pil_image = Image.open(filedialog.askopenfilename(title="Select an image!")) # opens as a PIL image
     get_colors(pil_image) # grab color data
-    check_transparency(pil_image) # check if alpha composition needs to be done and run image_preview
+    check_transparency(pil_image) # also run image_preview if image is transparent
     if transparent is False:
         image_preview(pil_image) # in case pil_image is not transparent, still need to get smaller image size for display
     elif transparent is True:
@@ -73,7 +73,7 @@ def open_url():
     default_request = requests.get(get_url)
     opened_from_url = Image.open(BytesIO(default_request.content))
     get_colors(opened_from_url) # grab color data
-    check_transparency(opened_from_url) # check if alpha composition needs to be done and run image_preview
+    check_transparency(opened_from_url) # also run image_preview if image is transparent
     if transparent is False:
         image_preview(opened_from_url) # in case opened_from_url is not transparent, still need to get smaller image size for display
     elif transparent is True:
@@ -112,7 +112,7 @@ def image_preview(img):
         target_file = ImageTk.PhotoImage(img)
 
 
-# check_file() displays target_file if it is a valid image
+# display_target() displays target_file if it is a valid image
 def display_target():
     global target_file
     global image_loaded
@@ -123,6 +123,7 @@ def display_target():
         palette_preview()
 
 
+# palette_preview() updates palette_canvas to display the image's palette
 def palette_preview():
     global hex_canvas
     for c in hex_canvas:
