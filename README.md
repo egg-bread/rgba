@@ -1,10 +1,17 @@
 # rgba
-rgba is a collection of GUI projects made in Python revolving around colors and images :D
+rgba is a collection of GUI projects written in Python3 revolving around colors and images :D
 
-## rgba: Color Palette! ##
+To run each respective program in bash, navigate to the directory of where the program file is and run using python3:
+```
+$ python3 (insert file name).py
+```
+
+### rgba: Color Palette! ###
 ![rgba: Color Palette! GUI](images/rgba_color_palette_GUI.png)
 
 Color Palette! accepts JPEG/PNG images with at least 3 color channels (RGB or RGBA mode) :-)
+
+[Download it! (color_palette.py)](color_palette.py)
 
 Python libraries used:
 - Tkinter
@@ -14,10 +21,12 @@ Python libraries used:
 - copy
 
 
-## rgba: Background! ##
+### rgba: Background! ###
 ![rgba: Background! GUI](images/rgba_Background_GUI.png)
 
 Background! accepts PNG images with transparent backgrounds/areas  and replaces those transparent pixels with your choice of color :-)
+
+[Download it! (background.py)](background.py)
 
 When an image is selected (from file or from URL), the image will be displayed with white replacing the transparent areas. For example, using [this image](https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/ChoughsDiff.svg/1200px-ChoughsDiff.svg.png), it will be displayed as:
 ![birds](images/transparency_to_white_display.png)
@@ -30,8 +39,8 @@ Python libraries used:
 - requests
 - io
 
-## rgba: Crop! ##
+### rgba: Crop! ###
 WIP
-## Acknowledgements ##
+# Acknowledgements #
 Thanks to:
 
